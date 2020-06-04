@@ -1,11 +1,12 @@
-const axios = require ('axios')
+const axios = require ('axios');
+
+import {KEY} from './safety/keys'
 
 const box = document.querySelector('#box');
 
-const city = 'Poltava';
-const key = '8a8af489c4b7e55ed215394e6cc68b95'
+const city = 'Khorol';
 
-const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=imperial`
+const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}&units=imperial`
 
 axios.get(url)
     .then(resp=>{
