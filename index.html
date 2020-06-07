@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First step</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="box"></div>
+    <div class="conteiner">
+        <div class="title__header">
+            <h1>Weather</h1>
+            <p>what the weather is like in your city</p>
+        </div>
+
+        <div id="app" class="app__box">
+            <div class="app__header">
+                <img src="./img/map_city_marker.png" alt="city icon">
+                <form class="form_search">
+                    <input id="city" type="text" name="city">
+                    <button id="search-button">start</button>
+                </form>
+            </div>
+
+            <div class="app__weather-box">
+                <div class="weather-box__header">
+                    <p>Weather</p>
+                    <img src="./img/celsium.png" alt="celsium" width="25" height="25">
+                </div>
+
+                <div class="weather-box__body">
+                    <div>
+                        <div id="name-city">CIty</div>
+                        <div class="box_data_temp">
+                            <div id="temp">-13</div>
+                            <div id="weather-ico"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>text</div>
+                        <div>text</div>
+                    </div>
+                    <div>
+                        <div>text</div>
+                        <div>text</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
