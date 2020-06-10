@@ -21,29 +21,40 @@
                     <button id="search-button">start</button>
                 </form>
             </div>
-
-            <div class="app__weather-box">
-                <div class="weather-box__header">
-                    <p>Weather</p>
-                    <img src="./img/celsium.png" alt="celsium" width="25" height="25">
+            
+            <div id="data-output__box" class="app__weather-box">
+                <div class="app__start-box">
+                    <p class="start-text">
+                        „Inspiration can be found even in weather forecast“
+                        <span>Hayao Miyazaki</span>
+                    </p>
                 </div>
+                <div class="app_temp-box remove">
+                    <div class="weather-box__header">
+                        <p>Weather</p>
+                        <img src="./img/celsium.png" alt="celsium" width="25" height="25">
+                    </div>
 
-                <div class="weather-box__body">
-                    <div>
-                        <div id="name-city">CIty</div>
-                        <div class="box_data_temp">
-                            <div id="temp">-13</div>
-                            <div id="weather-ico"></div>
+                    <div class="weather-box__body">
+                        <div>
+                            <div id="name-city">CIty</div>
+                            <div class="box_data_temp">
+                                <div id="temp">-13</div>
+                                <div id="weather-ico"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>text</div>
+                            <div>text</div>
+                        </div>
+                        <div>
+                            <div>text</div>
+                            <div>text</div>
                         </div>
                     </div>
-                    <div>
-                        <div>text</div>
-                        <div>text</div>
-                    </div>
-                    <div>
-                        <div>text</div>
-                        <div>text</div>
-                    </div>
+                </div>
+                <div class="error-box remove">
+                    <p>Enter the name of the settlement correctly</p>
                 </div>
             </div>
         </div>
